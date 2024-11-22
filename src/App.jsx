@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ThemeToggle from "./components/ThemeToggle";
 import SchemaForm from "./components/SchemaForm";
 import DataForm from "./components/DataForm";
 import GeneratedApi from "./components/GeneratedApi";
-import Spinner from "./components/Spinner"
+import Spinner from "./components/Spinner";
 
 
 const App = () => {
@@ -50,7 +50,7 @@ const App = () => {
 
   return (
     <div className={` min-h-screen ${theme === 'light' ? "bg-white" : "dark:bg-gray-900" }`}>
-      <header className={`p-4 bg-gray-100 ${theme == "light" ? "bg-black backdrop-blur-md" : " dark:bg-gray-800"} flex justify-between items-center`}>
+      <header className={`p-4 bg-gray-100 ${theme == "light" ? "bg-slate-900 backdrop-blur-md" : " dark:bg-gray-800"} flex justify-between items-center`}>
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100">
          
           {step == 1 && " API Schema Creator"}

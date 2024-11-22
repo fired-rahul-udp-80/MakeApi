@@ -15,7 +15,7 @@ const GeneratedApi = ({ apiId,data,theme }) => {
    
 
   return (
-    <div className={`container mx-auto p-4 bg-white shadow rounded ${theme == "light" ? "bg-black backdrop-blur-md" : " dark:bg-gray-800"} dark:text-white`}>
+    <div className={`container mx-auto p-4 bg-white shadow rounded ${theme == "light" ? "bg-slate-900 backdrop-blur-md" : " dark:bg-gray-800"} dark:text-white`}>
       <h2 className="text-xl font-bold mb-4">Your API</h2>
       <div className="flex justify-between">
       <p className="mb-2">
@@ -37,7 +37,7 @@ const GeneratedApi = ({ apiId,data,theme }) => {
       <FaCopy  onClick={copyBtn} className="cursor-pointer text-green-500 text-2xl "/>
       </div>
       </div>
-      <pre className="bg-gray-100 p-4 rounded dark:bg-gray-700">
+      <pre className="bg-gray-100 p-4 rounded dark:bg-gray-700 text-pink-500 font-medium">
         {JSON.stringify(data, null, 2)}
       </pre>
     </div>
