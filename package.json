@@ -5,7 +5,7 @@
   "main": "postcss.config.js",
   "scripts": {
     "start": "vite --port=2000 && vite",
-    "build": "vite build && npm build",
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "cd server && npm run dev",
