@@ -18,7 +18,7 @@ const SchemaForm = ({ setSchema,theme }) => {
   };
 
   return (
-    <div className={`flex flex-col gap-y-2 mx-auto p-4 bg-white shadow rounded ${theme == "light" ? "bg-slate-900 backdrop-blur-md" : " dark:bg-gray-800"} dark:text-white`}>
+    <div className={`flex flex-col gap-y-2 mx-auto p-4 bg-white shadow rounded ${theme == "light" ? "dark:bg-slate-900 backdrop-blur-md" : " dark:bg-gray-800"} dark:text-white`}>
       <h2 className="text-xl font-bold mb-4">Define Your Schema</h2>
       <input
         type="text"
